@@ -137,7 +137,7 @@ def modelo():
         prediction_label = 1 if prob_1 >= threshold else 0
 
         # Mostrar resultados en Streamlit
-        st.write("Probabilidad de la clase 1:", prob_1)
+        st.write("Recomendación para invertir:", prob_1)
         st.write("Marcador de predicción:", prediction_label)
 
         # Mensaje basado en la predicción
