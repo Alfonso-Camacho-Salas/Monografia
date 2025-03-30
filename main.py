@@ -10,7 +10,7 @@ pipeline = load_model(model_name="inversion")
 
 # Sidebar navigation
 def sidebar_navigation():
-    st.sidebar.image("LOGO-CBSM.png")
+    st.sidebar.image("LOGOCBSM.png")
     st.sidebar.title("Navegación")
     return st.sidebar.radio("Ir a: ", ["Variables Financieras", "Modelo", "Sobre"])
     
