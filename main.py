@@ -133,7 +133,7 @@ def modelo():
         prob_1 = prediction["prediction_score_1"][0]  # Probabilidad de la clase 1
 
         # Aplicar manualmente el threshold de 0.35
-        threshold = 0.35
+        threshold = 0.33
         prediction_label = 1 if prob_1 >= threshold else 0
 
         # Mostrar resultados en Streamlit
