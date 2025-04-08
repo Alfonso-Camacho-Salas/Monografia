@@ -117,11 +117,11 @@ def modelo():
 
     # Collect inputs into a numpy array
     input_data = pd.DataFrame([
-        {'BPA diluido': EPS_Diluted,'Recompra de acciones':Issuance_buybacks_of_shares,
-         'Efecto de los cambios de divisas en el efectivo':Effect_of_forex_changes_on_cash, 'Múltiplo de Valor Empresarial':enterpriseValueMultiple,
-         'Precio Valor Justo': priceFairValue, 'Rendimiento por Ganancias':Earnings_Yield, 'Días de Ventas Pendientes de cobro': Days_Sales_Outstanding,
-         'Días de Pagos Pendientes':  Days_Payables_Outstanding,
-          'Crecimiento del Flujo de Caja Operativo': Operating_Cash_Flow_growth,'Crecimiento del Valor Contable por Acción': Book_Value_per_Share_Growth }
+        {'EPS Diluted': EPS_Diluted,'Issuance buybacks of shares':Issuance_buybacks_of_shares,
+         'Effect of forex changes on cash':Effect_of_forex_changes_on_cash, 'enterpriseValueMultiple':enterpriseValueMultiple,
+         'priceFairValue': priceFairValue, 'Earnings Yield':Earnings_Yield, 'Days Sales Outstanding': Days_Sales_Outstanding,
+         'Days Payables Outstanding':  Days_Payables_Outstanding,
+          'Operating Cash Flow growth': Operating_Cash_Flow_growth,'Book Value per Share Growth': Book_Value_per_Share_Growth }
     ])
 
     # Predict button
