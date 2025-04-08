@@ -19,9 +19,9 @@ def Variables_Financieras():
     st.title("Variables Financieras")
     st.write("En la siguiente pagina encontraras la definición de cada indicador financiero usado por el modelo")
     data = {
-    'Indicador': ['EPS Diluido', 'Issuance buybacks of shares', 'Effect of forex changes on cash', 'enterpriseValueMultiple',
-                 'priceFairValue', 'Earnings Yield', 'Days Sales Outstanding', 'Days Payables Outstanding',
-                 'Operating Cash Flow growth', 'Book Value per Share Growth'],
+    'Indicador': ['BPA diluido', 'Recompra de acciones', 'Efecto de los cambios de divisas en el efectivo', 'Múltiplo de Valor Empresarial',
+                 'Precio Valor Justo', 'Rendimiento por Ganancias', 'Días de Ventas Pendientes de cobro', 'Días de Pagos Pendientes',
+                 'Crecimiento del Flujo de Caja Operativo', 'Crecimiento del Valor Contable por Acción'],
     'Definición': ['Beneficio por acción diluido', 'Compra de acciones propias', 'Efecto de los cambios de divisas en el efectivo', 'Múltiplo de valor empresarial',
                   'Precio justo de la acción', 'Rendimiento de las ganancias', 'Días promedio de cuentas por cobrar', 'Días promedio de cuentas por pagar',
                   'Crecimiento del flujo de caja operativo', 'Crecimiento del valor contable por acción'],
