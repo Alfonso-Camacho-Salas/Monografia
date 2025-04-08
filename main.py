@@ -105,23 +105,23 @@ def modelo():
 
     # Inputs for the variables (these should match the features your model expects)
     EPS_Diluted = st.number_input("BPA diluido", value=7.27)
-    Issuance_buybacks_of_shares = st.number_input("Issuance/Buybacks of Shares", value=4000000.0)
-    Effect_of_forex_changes_on_cash = st.number_input("Effect of Forex Changes on Cash", value=26000000.0)
-    enterpriseValueMultiple = st.number_input("Enterprise Value Multiple", value=11.12200212)
-    priceFairValue = st.number_input("Price Fair Value", value=1.313306998)
-    Earnings_Yield = st.number_input("Earnings Yield", value=0.0884)
-    Days_Sales_Outstanding = st.number_input("Days Sales Outstanding", value=29.9224)
-    Days_Payables_Outstanding = st.number_input("Days Payables Outstanding", value=89.0539)
-    Operating_Cash_Flow_growth = st.number_input("Operating Cash Flow Growth", value=0.6561)
-    Book_Value_per_Share_Growth = st.number_input("Book Value per Share Growth", value=0.1187)
+    Issuance_buybacks_of_shares = st.number_input("Recompra de acciones", value=4000000.0)
+    Effect_of_forex_changes_on_cash = st.number_input("Efecto de los cambios de divisas en el efectivo", value=26000000.0)
+    enterpriseValueMultiple = st.number_input("Múltiplo de Valor Empresarial", value=11.12200212)
+    priceFairValue = st.number_input("Precio Valor Justo", value=1.313306998)
+    Earnings_Yield = st.number_input("Rendimiento por Ganancias", value=0.0884)
+    Days_Sales_Outstanding = st.number_input("Días de Ventas Pendientes de cobro", value=29.9224)
+    Days_Payables_Outstanding = st.number_input("Días de Pagos Pendientes", value=89.0539)
+    Operating_Cash_Flow_growth = st.number_input("Crecimiento del Flujo de Caja Operativo", value=0.6561)
+    Book_Value_per_Share_Growth = st.number_input("Crecimiento del Valor Contable por Acción", value=0.1187)
 
     # Collect inputs into a numpy array
     input_data = pd.DataFrame([
-        {'EPS Diluted': EPS_Diluted,'Issuance buybacks of shares':Issuance_buybacks_of_shares,
-         'Effect of forex changes on cash':Effect_of_forex_changes_on_cash, 'enterpriseValueMultiple':enterpriseValueMultiple,
-         'priceFairValue': priceFairValue, 'Earnings Yield':Earnings_Yield, 'Days Sales Outstanding': Days_Sales_Outstanding,
-         'Days Payables Outstanding':  Days_Payables_Outstanding,
-          'Operating Cash Flow growth': Operating_Cash_Flow_growth,'Book Value per Share Growth': Book_Value_per_Share_Growth }
+        {'BPA diluido': EPS_Diluted,'Recompra de acciones':Issuance_buybacks_of_shares,
+         'Efecto de los cambios de divisas en el efectivo':Effect_of_forex_changes_on_cash, 'Múltiplo de Valor Empresarial':enterpriseValueMultiple,
+         'Precio Valor Justo': priceFairValue, 'Rendimiento por Ganancias':Earnings_Yield, 'Días de Ventas Pendientes de cobro': Days_Sales_Outstanding,
+         'Días de Pagos Pendientes':  Days_Payables_Outstanding,
+          'Crecimiento del Flujo de Caja Operativo': Operating_Cash_Flow_growth,'Crecimiento del Valor Contable por Acción': Book_Value_per_Share_Growth }
     ])
 
     # Predict button
